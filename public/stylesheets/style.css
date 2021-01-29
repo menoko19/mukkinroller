@@ -1,0 +1,19 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 85vh;
+}
+
+footer {
+  text-align: center;
+  margin-top: auto;
+}

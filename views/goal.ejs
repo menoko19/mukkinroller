@@ -1,0 +1,41 @@
+<h1 class="h1">目標</h1>
+<br><br>
+<div>
+    <table class="table">
+        <thead class="h1">
+            <tr>
+                <th>開始日</th>
+                <th>終了日</th>
+                <th>残り回数</th>
+                <th>残り</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="display-1">
+                <td><%- items.start_date %></td>
+                <td><%- items.finish_date %></td>
+                <td><%- items.count %></td>
+                <td><%- items.remaining_time %></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p class="h4">目標を変更する</p>
+<br>
+<form action="/goal" method="post">
+    <div class="form-group row">
+            <label for="start_date" class="col-3 form-control-label">開始日</label>
+            <input type="date" name="start_date" class="col-2 form-control"/>
+        </div>
+    <div class="form-group row">
+        <label for="finish_date" class="col-3 form-control-label">終了日</label>
+        <input type="date" name="finish_date" class="col-2 form-control"/>
+    </div>
+    <div class="form-group row">
+        <label for="count" class="col-3 form-control-label">回数</label>
+        <input type="number" name="count" class="col-2 form-control"/>
+    </div>
+    <div class="form-group row">
+        <input type="submit" class="btn btn-info" value="変更">
+    </div>
+</form>

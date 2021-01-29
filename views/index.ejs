@@ -1,0 +1,24 @@
+<h1 class="h1">記録</h1>
+<table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th>日時</th>
+            <th>距離</th>
+            <th>回数</th>
+            <th>スコア</th>
+            <th>消費カロリー</th>
+        </tr>
+    </thead>
+<% for (let item of items) { %>
+    <tbody>
+        <tr class="h3">
+            <td><%- item.date.getMonth()+1 + "/" + item.date.getDate(); %></td>
+            <td><%- item.distance %>cm</td>
+            <td><%- item.count %></td>
+            <td><%- item.score %></td>
+            <td><%- item.kcal %>kcal</td>
+        </tr>
+    </tbody>
+<% } %>
+</table>
+<br>
